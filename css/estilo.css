@@ -1,0 +1,409 @@
+*{
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+}
+body{
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-color: rgb(4, 12, 23);
+    z-index: -2;
+    height: 100%;
+}
+.contenedor{
+  width: 100%;
+  max-width: 1930px;
+  margin: auto;
+  background-color: rgb(4, 12, 23);
+  height: 100%;
+}
+
+div{
+  display: block;
+}
+
+/*Barra de redes*/
+.redesso{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  flex-direction: row;
+}
+
+.redess{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  display: flex;
+  background-color: rgba(143, 43, 80, 0.5)
+}
+
+.logo{
+  display: flex;
+  width: 20%;
+  align-items: center;
+}
+.logo img{
+  display: block;
+  min-width: 200px;
+  height: 100px;
+}
+.dere{
+ display: flex;
+ align-items: center;
+ justify-content:flex-end;
+ width: 25%;
+ float: right;
+}
+.redesimg{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.centro{
+  display: flex;
+  width: 100%;
+  max-width: 580px;
+  justify-content: space-between;
+}
+.centro a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: rgba(207, 67, 95, 0.2);
+  text-shadow: 2px 2px 8px rgb(19, 187, 199);
+  border-bottom: 5px solid rgba(0, 69, 166, 0.);
+  border-radius: 12px;
+  padding-right: 7px;
+  padding-left: 10px;
+  padding-top: 2px;
+  box-shadow: 6px 6px 6px rgb(10, 8, 43);
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.centro a:active{
+	box-shadow: 2px 2px 2px rgb(133, 197, 235), 0px 0px 35px 0px #00b7f8;
+	border-bottom:1px solid #0045A6;
+  text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+  transition: all 0.1s ease 0s;
+  
+}
+.imgredes img{
+  width: 44px;
+  height: 44px;
+  margin-right: 7px;
+}
+.imgredes a:hover{
+  color: aqua;
+}
+.textbanner{
+  text-align: justify;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  width: 200px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-shadow: 5px 4px 5px aqua;
+}
+.textbanner h1 {
+  display: flex;
+  color: azure;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media all and (max-width:852px){
+  .logo{
+    justify-content: center;
+    width: 40%;
+  }
+  .logo img{
+    min-width: 100px;
+    width: 80%;
+  }
+  .textbanner{
+    display: none !important;
+  }
+  .dere{
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .menu{
+    max-width: 852px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .redesso{
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .redess{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media all and (min-width:320px) and (max-width:475px){
+  .redesso{
+    height: 250px;
+  }
+  .centro{
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+  }
+  .centro a{
+    margin-top: 5px;
+  }
+
+}
+/* Fin de barra de redes*/
+
+/* Banner*/ 
+.banner{
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+}
+@media all and (max-width:852px){
+  .banner{
+    margin-top: 200px;
+  }
+}
+@media all and (min-width:320px) and (max-width:475px){
+  .banner{
+    margin-top: 250px;
+  }
+}
+
+/*Fin Banner*/
+
+/*contenido del centro*/
+.menulateral{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.izquimenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/menulate.gif);
+  color: aliceblue;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 2px;
+  max-width: 282px;
+  width: 100%;
+  height: 974px;
+}
+.deremenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/menulate.gif);
+  color: aliceblue;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  margin-right: 2px;
+  max-width: 282px;
+  width: 100%;
+  height: 974px;
+}
+.videoop{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  max-height: 974px;
+  align-items: stretch;
+  margin-left: 6px;
+}
+
+.videoop video{
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 720px;
+}
+@media all and (max-width:852px) {
+  .menulateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .izquimenu{
+    height: 574px;
+    max-width: 852px;
+    width: 90%;
+  }
+  .deremenu{
+    height: 574px;
+    max-width: 852px;
+    width: 90%;
+  }
+}
+  
+
+/*fin contenido del centro*/
+
+/* mi historia*/
+.mihistory{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  flex-direction: column;
+  background-image: url(../img/123.jpg);
+  max-width: 1280px;
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mihistory h3{
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding:  10px;
+  max-height: 44px;
+  text-shadow: 4px 4px 18px rgb(70, 23, 240);
+  border-radius: 12px;
+}
+.mihistory p{
+  display: flex;
+  text-align: justify;
+  letter-spacing: 4px;
+  padding-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 4px 4px 18px rgb(70, 23, 240);
+  border-radius: 12px;
+  margin: 5px;
+ 
+}
+@media all and (max-width:852px){
+  .mihistory{
+    max-height: 654px;
+    height: 100%;
+  }
+  .mihistory p{
+   font-weight: 10px;
+  }
+}
+/*fin de mi historia*/
+
+/*Boton de ir al streaming*/
+.botton{
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  justify-content: right;
+  padding-top: 5px;
+}
+button{
+  background-color: rgba(13, 35, 63, 0.0);
+  border-radius: 40%;
+}
+button a{
+  width: 70px; 
+  height: 40px; 
+  border-radius: 40%;
+  background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  text-transform: uppercase ; 
+  font-size: 20px; 
+  color: white;
+  background-size: 400%; position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button a ::before {
+  content:""; 
+  position: absolute; 
+  left:-5px;
+  top: -5px; 
+  bottom: -5px; 
+  right: -5px;
+  background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  z-index: -1; 
+  border-radius: 40px;
+  filter: blur(20px);
+  background-size: 400%;
+}
+button a:hover::before {
+  animation: hello 8s infinite;
+}
+button a:hover {
+  animation: hello 8s infinite;
+  cursor: pointer;
+}
+@keyframes hello {
+  100%{
+      background-position: -400% 0;
+  }
+}
+/* fin de bonton de ir al straming*/
+
+
+
+/*pie de paigna*/
+.redessociales{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(143, 43, 80, 0.3);
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  align-items:center;
+  color: #fff;
+}
+.copyright a{
+  color: blue;
+}
+.copyright a:hover{
+  color: #00b7f8;
+}
+/*fin de pieg de pagina*/
